@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Sentiment Analysis</title>
+    
+    <style>
+        body {
+            background-color: #f2f2f2; /* Light gray background */
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333; /* Dark text color */
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leo's Soccer Sentiment Analysis</h1>
+    <form method="post" action="/">
+        <label for="first_team">First Team:</label>
+        <input type="text" name="first_team" required>
+        <br>
+        <label for="second_team">Second Team:</label>
+        <input type="text" name="second_team" required>
+        <br>
+        <label for="competition">Competition:</label>
+        <input type="text" name="competition" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
