@@ -7,15 +7,34 @@
     <style>
         body {
             text-align: center;
-            background-color: #f2f2f2;
+            background-color: #ff9248;
         }
         .plot-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
         .plot {
-            margin: 10px; 
+            margin: 10px;  /* Adjust margin as needed */
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -35,5 +54,8 @@
             <img src="{{ url_for('static', filename='second_team_sentiment_plot.png') }}" alt="Second Team Plot">
         </div>
     </div>
+
+    <!-- Button to go back to the initial screen -->
+    <button class="back-button" onclick="window.location.href='/'">Go Back</button>
 </body>
 </html>

@@ -10,6 +10,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from scipy.special import softmax
 import string
 import nltk
+nltk.download('stopwords')
 from multiprocessing.pool import ThreadPool
 from functools import partial
 from nltk.corpus import stopwords

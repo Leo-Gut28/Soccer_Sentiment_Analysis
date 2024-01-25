@@ -4,19 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soccer Sentiment Analysis</title>
-    
     <style>
         body {
-            background-color: #f2f2f2; /* Light gray background */
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ff9248;
         }
-        
+
         h1 {
-            color: #333; /* Dark text color */
+            text-align: center;
+            color: #333;
         }
-        
+
         form {
-            margin-top: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #53a5db;
         }
     </style>
 </head>
@@ -24,13 +59,13 @@
     <h1>Leo's Soccer Sentiment Analysis</h1>
     <form method="post" action="/">
         <label for="first_team">First Team:</label>
-        <input type="text" name="first_team" required>
+        <input type="text" name="first_team" placeholder="Enter First Team" required>
         <br>
         <label for="second_team">Second Team:</label>
-        <input type="text" name="second_team" required>
+        <input type="text" name="second_team" placeholder="Enter Second Team" required>
         <br>
         <label for="competition">Competition:</label>
-        <input type="text" name="competition" required>
+        <input type="text" name="competition" placeholder="Enter Competition" required>
         <br>
         <input type="submit" value="Submit">
     </form>
