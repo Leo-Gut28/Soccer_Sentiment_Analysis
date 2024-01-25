@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif; 
+            background-image: url('static/Santiago_Bernabeu.jpeg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff; 
+        }
+
+        h2 {
+            color: #CFDDFF; 
+        }
+
+        h3 {
+            color: #CFDDFF; 
+        }
+
+        .plot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .plot {
+            margin: 10px;  
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Results for {{ first_team }} vs {{ second_team }}</h2>
+    
+    <div class="plot-container">
+        <!-- Display the first team plot -->
+        <div class="plot">
+            <h3>{{ first_team }} Post-match Sentiment</h3>
+            <img src="{{ url_for('static', filename='first_team_sentiment_plot.png') }}" alt="First Team Plot">
+        </div>
+
+        <!-- Display the second team plot -->
+        <div class="plot">
+            <h3>{{ second_team }} Post-match Sentiment</h3>
+            <img src="{{ url_for('static', filename='second_team_sentiment_plot.png') }}" alt="Second Team Plot">
+        </div>
+    </div>
+
+    <!-- Button to go back to the initial screen -->
+    <button class="back-button" onclick="window.location.href='/'">Go Back</button>
+</body>
+</html>
