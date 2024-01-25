@@ -4,7 +4,7 @@ import requests
 
 def get_team_data(first_team, second_team, competition):
     headers = {
-        "X-RapidAPI-Key": "445088a04bmshf38acde11d7c250p13801fjsn7bb80ece68e1",
+        "X-RapidAPI-Key": "",
         "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com"
     }
 
