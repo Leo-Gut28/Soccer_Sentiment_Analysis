@@ -17,7 +17,9 @@ Otherwise, enter the teams and competition for the match details.
 
 ## What It Looks Like
 Main Page: 
-![Main Page](static/soccer_ball2.jpeg)
+![Main Page](static/main_page.png)
+Results Page: 
+![Results Page](static/results_page.png)
 
 ## Technologies Used
 - Python
